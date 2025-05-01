@@ -282,6 +282,7 @@
     border-radius: var(--br);
     background: var(--clr-neutral-900);
     font-family: var(--ff-serif);
+    z-index: 1000;
   }
 
   .primary-nav ul {
@@ -333,6 +334,13 @@
 
   .secondary-navigation > .btn:last-child {
     margin-left: auto;
+  }
+
+  
+  @media (max-width: 40em) {
+    .secondary-navigation {
+    flex-direction: column;
+  }
   }
 
   .categories {
